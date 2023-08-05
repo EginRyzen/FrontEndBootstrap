@@ -1,0 +1,110 @@
+@font-face {
+  font-family: "Poppins";
+  src: url("../fonts/Font/Roboto-Medium.ttf");
+}
+* {
+  font-family: "Poppins";
+}
+html {
+  scroll-behavior: smooth;
+}
+
+.bg-nav {
+  background: rgb(0, 0, 0, 0.5) !important;
+}
+.dropdown-menu{
+  background-color: rgba(0,0,0,0.5);
+}
+.dropdown-menu li a{
+  color: #fff;
+}
+
+.content {
+  position: absolute;
+  width: 100%;
+  margin: auto;
+  overflow: hidden;
+}
+
+.content-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background: rgb(0, 0, 0);
+  opacity: 0;
+  transition: all 0.5s ease-in-out 0s;
+}
+
+.content-details {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 100%;
+  top: 50%;
+  background-color: #fff;
+  opacity: 0;
+  transition: all 0.5s ease-in-out 0s;
+}
+.content-details:hover .content-overlay {
+  opacity: 1;
+}
+
+.card-carousel {
+  background-color: darkgrey;
+}
+
+.content:hover .content-details {
+  opacity: 1;
+}
+
+@media screen and (max-width: 400px) {
+  .carousel-caption .card-body .card-subtitle {
+    display: none;
+  }
+}
+.row .top img:hover {
+  transform: scale(1.1);
+  z-index: 2;
+  border-radius: 10px;
+  border-bottom: black 1px solid;
+}
+ul li .nav-link:hover {
+  border-bottom: 2px solid #458a14;
+}
+ul li .nav-link {
+  font-size: 18px;
+}
+.footer {
+  background-color: #458a14;
+}
+table tbody .bg:hover {
+  background-color: #458a14;
+}
+ul .px-1 {
+  margin-top: 5%;
+  margin-bottom: 3%;
+}
+.row .img img {
+  border-radius: 50%;
+  width: 60%;
+  border: 1px solid #000;
+}
+.row .img img:hover {
+  transform: scale(1.1);
+}
+#navCollapse ul .nav-item .nav-link {
+  color: black;
+}
+#navCollapse ul .nav-item .nav-link:hover {
+  color: #458a14;
+}
+.garis {
+  border-right-color: #000;
+  border-right-width: 2px;
+  border-right-style: solid;
+  margin-top: 20px;
+}

@@ -1,0 +1,12 @@
+@font-face{
+    font-family: "JakartaPlusSans";
+    src: url(./fonts/Plus_Jakarta_Sans/static/PlusJakartaSans-Bold.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "JakartaPlusSans";
+}
+ul li .text {
+    color: #458a14;
+}
